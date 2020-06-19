@@ -5,7 +5,7 @@
 ## Terraform file description
 
 - aws_key_pair.tf
-Instance aws_key_pair this file use a public key located in ~/.ssh/aws.pub you can create with the command ssh-keygen
+Instance aws_key_pair this file use a public key located in ~/.ssh/aws.pub you can create with the command ```$ ssh-keygen ```
 - aws_security_group.tf
 This file instance two security_group for provide port access 80 and 22
 - variables.tf
@@ -25,9 +25,8 @@ Create a nginx container with port 80 avaliable
 
 
 ## Pre requisites
-- Configure your aws credencials , you can use aws ```console
-foo@bar:~$ configure command
-foo```the profile used is default
+- Configure your aws credencials , you can use aws ```$ configure command
+```the profile used is for main.tf is default
 - ansible  2.5.1 or above
 - terraform  v0.12.26 or above 
 
