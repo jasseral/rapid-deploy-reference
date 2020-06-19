@@ -25,8 +25,7 @@ Create a nginx container with port 80 avaliable
 
 
 ## Pre requisites
-- Configure your aws credencials , you can use aws ```$ configure command
-```the profile used is for main.tf is default
+- Configure your aws credencials , you can use aws ```$ aws configure``` the profile used for main.tf is default
 - ansible  2.5.1 or above
 - terraform  v0.12.26 or above 
 
