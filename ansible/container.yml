@@ -1,0 +1,11 @@
+- hosts: workers
+  become: yes
+  tasks:
+   - name: Create a nginx container 
+     docker_container:
+       name: nginx
+       image: nginx
+       state: started
+       ports:
+        - "80:80"
+       

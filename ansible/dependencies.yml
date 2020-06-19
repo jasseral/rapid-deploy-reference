@@ -1,0 +1,24 @@
+- hosts: workers
+  become: yes
+  tasks:
+   - name: install Docker
+     apt:
+       name: docker.io
+       state: present
+       update_cache: true
+   
+   - name: install python3-pip
+     apt:
+       name: python3-pip
+       state: present
+
+   - name: install docker-py
+     pip:
+       name: docker-py
+       executable: pip3
+       state: present
+
+   - name: install APT Transport HTTPS
+     apt:
+       name: apt-transport-https
+       state: present
