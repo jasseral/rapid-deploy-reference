@@ -8,6 +8,16 @@
 Instance aws_key_pair this file use a public key located in ~/.ssh/aws.pub you can create with the command ```$ ssh-keygen ```
 - aws_security_group.tf
 This file instance two security_group for provide port access 80 and 22
+- aws_internet_gateway.tf
+This file instance a gateway 
+- aws_route_table.tf
+This file instance a route table
+- aws_route_table_association.tf
+This file instance a route tablet association
+- aws_subnet.tf
+This file instance subnet
+- aws_vpc.tf
+This file instance 
 - variables.tf
 Values used for main.tf 
 - main.tf
